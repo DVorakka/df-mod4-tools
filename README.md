@@ -82,7 +82,7 @@ For this exercise, I was provided with the SHA-256 hash of a 6-digit numeric pas
 
 ### Generating the Rainbow Table
 
-I chose to generate my rainbow table using PowerShell, writing a script that computed the SHA-256 hashes for every possible 7-digit passcode (from `0000000` to `9999999`). The script calculated each passcode’s hash and saved it to a file, creating a list of `passcode : hash` pairs. 
+I chose to generate my rainbow table using PowerShell, writing a script that computed the SHA-256 hashes for every possible 6-digit passcode (from `000000` to `999999`). The script calculated each passcode’s hash and saved it to a file, creating a list of `passcode : hash` pairs. 
 
 Using a rainbow table saves time in digital forensics and cybersecurity. Instead of recalculating hashes for each password attempt, I can quickly look up hashes in the table. This speeds up the password recovery process, especially when handling large sets of potential passwords.
 
